@@ -90,3 +90,38 @@ Imagine a menu in a restaurant that has pictures and descriptions of each dish. 
 
 ## Code on Demand (optional)
 Some RESTful APIs may provide executable code to the client, like a JavaScript function. This can be useful for adding additional functionality to the client without requiring it to be built into the initial application.
+
+
+-----------------------
+
+### Spring Rest Book
+
+# REST - REpresentational State Transfer
+
+* Client-Server—Concerns should be separated between clients and servers.
+* Stateless—The communication between client and server should be stateless.
+* Layered System—Multiple hierarchical layers such as gateways, firewalls, and proxies can exist between client and server.
+* Cache—Responses from the server must be declared as cacheable or noncacheable.
+* Uniform Interface— All interactions between client, server, and intermediary components are based on the uniformity of their interfaces.
+* Code on demand—Clients can extend their functionality by downloading and executing code on demand.
+
+# RESTful resources are abstract entities.
+
+# REST components interact with a resource by ransferring its representations back and forth. they never directly interact with the resource.
+
+## Richardson’s Maturity Model
+
+# Level Zero
+This is the most rudimentary maturity level for a service. Services in this level use HTTP as the transport mechanism and perform remote procedure calls on a single URI. Typically, POST or GET HTTP methods are employed for service calls. SOAP- and XML-RPC-based Web services fall under this level.
+
+# Level One
+The next level adheres to the REST principles more closely and introduces multiple URIs, one per resource. Complex functionality of a large service endpoint is broken down into multiple resources. However, services in this layer use one HTTP verb, typically POST, to perform all of the operations.
+
+# Level Two
+Services in this level leverage HTTP protocol and make the right use of HTTP verbs and status codes available in the protocol. Web services implementing CRUD operations are good examples of Level 2 services.
+
+# Level Three
+This is the most mature level for a service and is built around the notion of Hypermedia as the Engine of Application State, or HATEOAS. Services in this level allow discoverability by providing responses that contain links to other related resources and controls that tell the client what to do next.
+
+----------------
+# The Model View Controller, or MVC, is an architectural pattern for building decoupled Web applications.
